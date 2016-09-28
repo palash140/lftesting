@@ -1,0 +1,435 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Socialize Plugin\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-06-02 13:16-0000\n"
+"PO-Revision-Date: 2016-06-02 13:16-0000\n"
+"Last-Translator: GhostPool\n"
+"Language-Team: \n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;esc_attr_e;_n_noop:1,2;"
+"esc_html__;esc_html_e\n"
+"X-Poedit-Basepath: ./\n"
+"X-Generator: Poedit 1.7.4\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../custom-sidebars/custom-sidebars.php:109
+#: ../custom-sidebars/custom-sidebars.php:175
+#: ../custom-sidebars/custom-sidebars.php:457
+msgid "You do not have permission to delete sidebars"
+msgstr ""
+
+#: ../custom-sidebars/custom-sidebars.php:135
+#, php-format
+msgid "The sidebar \"%s\" has been deleted."
+msgstr ""
+
+#: ../custom-sidebars/custom-sidebars.php:137
+#, php-format
+msgid "There was not any sidebar called \"%s\" and it could not been deleted."
+msgstr ""
+
+#: ../custom-sidebars/custom-sidebars.php:214
+#: ../custom-sidebars/views/edit.php:5
+#: ../custom-sidebars/views/settings.php:3
+msgid "Sidebars"
+msgstr ""
+
+#: ../custom-sidebars/custom-sidebars.php:265
+msgid "The custom sidebars settings has been updated successfully."
+msgstr ""
+
+#: ../custom-sidebars/custom-sidebars.php:272
+msgid "You have to fill all the fields to create a new sidebar."
+msgstr ""
+
+#: ../custom-sidebars/custom-sidebars.php:296
+#: ../custom-sidebars/custom-sidebars.php:319
+msgid "The sidebar has been created successfully."
+msgstr ""
+
+#: ../custom-sidebars/custom-sidebars.php:301
+msgid ""
+"There is already a sidebar registered with that name, please choose a "
+"different one."
+msgstr ""
+
+#: ../custom-sidebars/custom-sidebars.php:338
+#: ../custom-sidebars/custom-sidebars.php:341
+msgid "The operation is not secure and it cannot be completed."
+msgstr ""
+
+#: ../custom-sidebars/custom-sidebars.php:364
+#, php-format
+msgid "The sidebar \"%s\" has been updated successfully."
+msgstr ""
+
+#: ../custom-sidebars/custom-sidebars.php:488
+msgid "The custom sidebars data has been removed successfully,"
+msgstr ""
+
+#: ../custom-sidebars/views/edit.php:25
+#: ../custom-sidebars/views/settings.php:63
+msgid "ID"
+msgstr ""
+
+#: ../custom-sidebars/views/edit.php:32
+#: ../custom-sidebars/views/settings.php:21
+#: ../custom-sidebars/views/settings.php:61
+msgid "Name"
+msgstr ""
+
+#: ../custom-sidebars/views/edit.php:39
+#: ../custom-sidebars/views/settings.php:27
+#: ../custom-sidebars/views/settings.php:62
+msgid "Description"
+msgstr ""
+
+#: ../custom-sidebars/views/edit.php:45
+msgid "Save Changes"
+msgstr ""
+
+#: ../custom-sidebars/views/settings.php:11
+msgid "New Sidebar"
+msgstr ""
+
+#: ../custom-sidebars/views/settings.php:13
+msgid ""
+"Add your sidebars below and then you can assign one of these sidebars from "
+"the individual posts/pages. When a sidebar is created, it is shown on the "
+"widgets page where you will be able to configure it."
+msgstr ""
+
+#: ../custom-sidebars/views/settings.php:24
+msgid "This name has to be unique."
+msgstr ""
+
+#: ../custom-sidebars/views/settings.php:34
+msgid "Create Sidebar"
+msgstr ""
+
+#: ../custom-sidebars/views/settings.php:50
+msgid "Are you sure to delete this sidebar?"
+msgstr ""
+
+#: ../custom-sidebars/views/settings.php:55
+msgid "Custom Sidebars"
+msgstr ""
+
+#: ../custom-sidebars/views/settings.php:78
+msgid "Configure Widgets"
+msgstr ""
+
+#: ../custom-sidebars/views/settings.php:79
+msgid "Edit"
+msgstr ""
+
+#: ../custom-sidebars/views/settings.php:80
+msgid "Delete"
+msgstr ""
+
+#: ../custom-sidebars/views/settings.php:85
+msgid "There are no custom sidebars available."
+msgstr ""
+
+#: ../custom-sidebars/views/settings.php:107
+#: ../custom-sidebars/views/settings.php:111
+msgid "Reset Sidebars"
+msgstr ""
+
+#: ../custom-sidebars/views/settings.php:109
+msgid ""
+"Click on the button below to delete all the custom sidebars data from the "
+"database. Keep in mind that once the button is clicked you will have to "
+"create new sidebars and customize them to restore your current sidebars "
+"configuration."
+msgstr ""
+
+#: ../custom-sidebars/views/settings.php:111
+msgid "Are you sure to reset the sidebars?"
+msgstr ""
+
+#: ../index.php:76
+#, php-format
+msgid "New user registration on your blog %s:"
+msgstr ""
+
+#: ../index.php:77 ../index.php:89
+#, php-format
+msgid "Username: %s"
+msgstr ""
+
+#: ../index.php:78
+#, php-format
+msgid "Email: %s"
+msgstr ""
+
+#: ../index.php:80
+#, php-format
+msgid "[%s] New User Registration"
+msgstr ""
+
+#: ../index.php:87
+msgid "Hi there,"
+msgstr ""
+
+#: ../index.php:88
+#, php-format
+msgid "Welcome to %s."
+msgstr ""
+
+#: ../index.php:90
+msgid "Password: [use the password you entered when signing up]"
+msgstr ""
+
+#: ../index.php:93
+#, php-format
+msgid "[%s] Your username and password"
+msgstr ""
+
+#: ../post-types/portfolio-tax.php:30 ../post-types/portfolio-tax.php:32
+msgid "Portfolio Items"
+msgstr ""
+
+#: ../post-types/portfolio-tax.php:31
+msgid "Portfolio Item"
+msgstr ""
+
+#: ../post-types/portfolio-tax.php:33
+msgid "All Portfolio Items"
+msgstr ""
+
+#: ../post-types/portfolio-tax.php:34 ../post-types/portfolio-tax.php:69
+#: ../post-types/slide-tax.php:24 ../post-types/slide-tax.php:58
+msgctxt "portfolio"
+msgid "Add New"
+msgstr ""
+
+#: ../post-types/portfolio-tax.php:35
+msgid "Add New Portfolio Item"
+msgstr ""
+
+#: ../post-types/portfolio-tax.php:36
+msgid "Edit Portfolio Item"
+msgstr ""
+
+#: ../post-types/portfolio-tax.php:37
+msgid "New Portfolio Item"
+msgstr ""
+
+#: ../post-types/portfolio-tax.php:38
+msgid "View Portfolio Item"
+msgstr ""
+
+#: ../post-types/portfolio-tax.php:39
+msgid "Search Portfolio Items"
+msgstr ""
+
+#: ../post-types/portfolio-tax.php:40
+msgid "No portfolio items found"
+msgstr ""
+
+#: ../post-types/portfolio-tax.php:41
+msgid "No portfolio items found in Trash"
+msgstr ""
+
+#: ../post-types/portfolio-tax.php:66 ../post-types/portfolio-tax.php:75
+msgid "Portfolio Categories"
+msgstr ""
+
+#: ../post-types/portfolio-tax.php:67
+msgid "Portfolio Category"
+msgstr ""
+
+#: ../post-types/portfolio-tax.php:68
+msgid "All Portfolio Categories"
+msgstr ""
+
+#: ../post-types/portfolio-tax.php:70
+msgid "Add New Portfolio Category"
+msgstr ""
+
+#: ../post-types/portfolio-tax.php:71
+msgid "Edit Portfolio Category"
+msgstr ""
+
+#: ../post-types/portfolio-tax.php:72
+msgid "New Portfolio Category"
+msgstr ""
+
+#: ../post-types/portfolio-tax.php:73
+msgid "View Portfolio Category"
+msgstr ""
+
+#: ../post-types/portfolio-tax.php:74
+msgid "Search Portfolio Categories"
+msgstr ""
+
+#: ../post-types/portfolio-tax.php:93 ../post-types/slide-tax.php:83
+msgid "Title"
+msgstr ""
+
+#: ../post-types/portfolio-tax.php:94 ../post-types/slide-tax.php:84
+msgid "Categories"
+msgstr ""
+
+#: ../post-types/portfolio-tax.php:95 ../post-types/slide-tax.php:85
+msgid "Image"
+msgstr ""
+
+#: ../post-types/portfolio-tax.php:96 ../post-types/slide-tax.php:86
+msgid "Date"
+msgstr ""
+
+#: ../post-types/slide-tax.php:20 ../post-types/slide-tax.php:22
+msgid "Slides"
+msgstr ""
+
+#: ../post-types/slide-tax.php:21
+msgid "Slide"
+msgstr ""
+
+#: ../post-types/slide-tax.php:23
+msgid "All Slides"
+msgstr ""
+
+#: ../post-types/slide-tax.php:25
+msgid "Add New Slide"
+msgstr ""
+
+#: ../post-types/slide-tax.php:26
+msgid "Edit Slide"
+msgstr ""
+
+#: ../post-types/slide-tax.php:27
+msgid "New Slide"
+msgstr ""
+
+#: ../post-types/slide-tax.php:28
+msgid "View Slide"
+msgstr ""
+
+#: ../post-types/slide-tax.php:29
+msgid "Search Slides"
+msgstr ""
+
+#: ../post-types/slide-tax.php:30
+msgid "No slides found"
+msgstr ""
+
+#: ../post-types/slide-tax.php:31
+msgid "No slides found in Trash"
+msgstr ""
+
+#: ../post-types/slide-tax.php:55 ../post-types/slide-tax.php:64
+msgid "Slide Categories"
+msgstr ""
+
+#: ../post-types/slide-tax.php:56
+msgid "Slide Category"
+msgstr ""
+
+#: ../post-types/slide-tax.php:57
+msgid "All Slide Categories"
+msgstr ""
+
+#: ../post-types/slide-tax.php:59
+msgid "Add New Slide Category"
+msgstr ""
+
+#: ../post-types/slide-tax.php:60
+msgid "Edit Slide Category"
+msgstr ""
+
+#: ../post-types/slide-tax.php:61
+msgid "New Slide Category"
+msgstr ""
+
+#: ../post-types/slide-tax.php:62
+msgid "View Slide Category"
+msgstr ""
+
+#: ../post-types/slide-tax.php:63
+msgid "Search Slide Categories"
+msgstr ""
+
+#, fuzzy
+#~ msgid "Large Background"
+#~ msgstr "Test"
+
+#, fuzzy
+#~ msgid "Hub Category"
+#~ msgstr "Test"
+
+#, fuzzy
+#~ msgid "All Hub Categories"
+#~ msgstr "Test"
+
+#, fuzzy
+#~ msgid "Add New Hub Category"
+#~ msgstr "Test"
+
+#, fuzzy
+#~ msgid "Edit Hub Category"
+#~ msgstr "Test"
+
+#, fuzzy
+#~ msgid "New Hub Category"
+#~ msgstr "Test"
+
+#, fuzzy
+#~ msgid "View Hub Category"
+#~ msgstr "Test"
+
+#, fuzzy
+#~ msgid "Search Hub Categories"
+#~ msgstr "Test"
+
+#, fuzzy
+#~ msgid "No user reviews found"
+#~ msgstr "Test"
+
+#, fuzzy
+#~ msgid "No user reviews found in Trash"
+#~ msgstr "Test"
+
+#, fuzzy
+#~ msgid "Video Category"
+#~ msgstr "Test"
+
+#, fuzzy
+#~ msgid "All Video Categories"
+#~ msgstr "Test"
+
+#, fuzzy
+#~ msgid "Add New Video Category"
+#~ msgstr "Test"
+
+#, fuzzy
+#~ msgid "Edit Video Category"
+#~ msgstr "Test"
+
+#, fuzzy
+#~ msgid "New Video Category"
+#~ msgstr "Test"
+
+#, fuzzy
+#~ msgid "View Video Category"
+#~ msgstr "Test"
+
+#, fuzzy
+#~ msgid "Search Video Categories"
+#~ msgstr "Test"
+
+#, fuzzy
+#~ msgid "Page Title Settings"
+#~ msgstr "Test"
+
+#, fuzzy
+#~ msgid "Page Title Height"
+#~ msgstr "Test"
