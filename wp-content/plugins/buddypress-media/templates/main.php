@@ -17,7 +17,7 @@ if ( 'xmlhttprequest' === strtolower( $_rt_ajax_request ) ) {
 	$rt_ajax_request = true;
 }
 ?>
-	<div id="buddypress">
+	<div id="buddypress" class="test">
 <?php
 //if it's not an ajax request, load headers
 if ( ! $rt_ajax_request ) {

@@ -13,7 +13,9 @@ if ( ! function_exists( 'ghostpool_enqueue_child_styles' ) ) {
 }
 add_action( 'wp_enqueue_scripts', 'ghostpool_enqueue_child_styles' );
 
+///////////////////////////////////////// CUSTOM FUNCTION GOES HERE ///////////////////////////////////
  function change_media_gallery_title( $title ){
+
 		global $rtmedia_query;
 		global $pagenow;
  		$rtmedia_query->is_gallery_shortcode = false;
@@ -31,7 +33,9 @@ add_filter('rtmedia_gallery_title', 'change_media_gallery_title', 10, 1);
 
 function my_wp_get_nav_menu_items( $items, $menu, $args ){
 
-	if ( is_user_logged_in() && class_exists( 'RTMedia' ) && $menu->slug == 'life-menu' && count($items) > 2) {
+	global $pagenow;
+
+	if ( is_user_logged_in() && class_exists( 'RTMedia' ) && $menu->slug == 'life-menu' && count($items) > 2 && $pagenow != "nav-menus.php") {
 	
 	$more_menu_item_id = $items[2]->ID;
 	

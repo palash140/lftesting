@@ -17,8 +17,8 @@
 				// Footer Image URL protocol
 				$gp_protocol = ( ! empty( $_SERVER['HTTPS'] ) && $_SERVER['HTTPS'] !== 'off' OR $_SERVER['SERVER_PORT'] == 443 ) ? 'https:' : 'http:';		
 				$socialize['footer_image']['url'] = $gp_protocol . str_replace( array( 'http:', 'https:' ), '', $socialize['footer_image']['url'] );
-
 				?>
+				
 				<div id="footer-image">
 					<div class="gp-container">
 						<img src="<?php echo esc_url( $socialize['footer_image']['url'] ); ?>" width="<?php echo absint( $socialize['footer_image_dimensions']['width'] ); ?>" height="<?php echo absint( $socialize['footer_image_dimensions']['height'] ); ?>" alt="" />
