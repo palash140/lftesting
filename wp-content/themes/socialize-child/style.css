@@ -19,3 +19,7 @@ Template: socialize
     text-transform: none;
     white-space: nowrap;
 }
+#report-porblem-select
+{
+	width: 100% !important;
+}
