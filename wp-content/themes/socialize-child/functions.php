@@ -6,6 +6,8 @@
 
 /////////////////////////////////////// Load parent style.css ///////////////////////////////////////
 
+require_once("libs/simple_html_dom.php");
+
 if ( ! function_exists( 'ghostpool_enqueue_child_styles' ) ) {
 	function ghostpool_enqueue_child_styles() { 
 		wp_enqueue_style( 'gp-parent-style', get_template_directory_uri() . '/style.css' );
@@ -230,6 +232,7 @@ class ReportPageSetting
 if( is_admin() )
     $report_page_setting = new ReportPageSetting();
 
+//Add dynamic drop down options
 function report_selection_items_to_contact_form ( $tag, $unused ) 
 { 
     if ( $tag['name'] != 'report-selection-items' )  
@@ -250,6 +253,26 @@ function report_selection_items_to_contact_form ( $tag, $unused )
   
     return $tag;  
 }  
-add_filter( 'wpcf7_form_tag', 'report_selection_items_to_contact_form', 10, 2)
+add_filter( 'wpcf7_form_tag', 'report_selection_items_to_contact_form', 10, 2);
+
+function filter_widgets( $widget_output, $widget_type, $widget_id, $sidebar_id ) {
+    /*Disable all warnings and notices*/
+    error_reporting(0);
+
+    /*Remove buddypress element from widgets*/
+    $html = str_get_html($widget_output);
+    if($html->getElementById("buddypress") != null)
+        $html->getElementById("buddypress")->innertext = "";
+
+    return $html;
+}
+
+function rtmedia_before_media_gallery_handler()
+{
+    /*Apply hook only when user on his/her profile page*/
+    if(bp_is_my_profile())
+        add_filter( 'widget_output', 'filter_widgets', 10, 4 );
+}
+add_action("rtmedia_before_media_gallery","rtmedia_before_media_gallery_handler");
 
 ?>
