@@ -52,3 +52,9 @@ Template: socialize
     text-transform: uppercase;
     width: 100%;
 }
+.gp-header-standard #gp-logo {
+    padding: 9px 0 !important;
+}
+.gp-scrolling.gp-header-standard #gp-logo {
+    padding: 9px 0 !important;
+}
