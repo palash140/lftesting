@@ -58,3 +58,10 @@ Template: socialize
 .gp-scrolling.gp-header-standard #gp-logo {
     padding: 9px 0 !important;
 }
+#gp-home-content {
+    margin: 0 auto;
+    padding: 30px;
+}
+.gb-home-right-sidebar{
+    margin-right: -5px;
+}

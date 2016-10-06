@@ -34,64 +34,6 @@ add_action( 'wp_enqueue_scripts', 'ghostpool_enqueue_child_styles' );
     }
 add_filter('rtmedia_gallery_title', 'change_media_gallery_title', 10, 1);
 
-function my_wp_get_nav_menu_items( $items, $menu, $args ){
-
-	global $pagenow;
-
-	if (class_exists( 'RTMedia' ) && ($menu->slug == 'socialize-secondary-main-header-menu') && (count($items) > 2) && ($pagenow != "nav-menus.php") && ($pagenow != "customize.php") && !is_admin() && is_user_logged_in()) {
-	
-		// $more_menu_item_id = $items[2]->ID;
-		
-		// // get current logged in user id
-		// $user_id = get_current_user_id();
-		// $url = trailingslashit ( get_rtmedia_user_link ( get_current_user_id () ) ) . RTMEDIA_MEDIA_SLUG . '/';     // get user's media link
-
-		// // add new menu item to nav menu
-		// $new_item = new stdClass;
-		// $new_item->menu_item_parent = $more_menu_item_id;
-		// $new_item->url = $url;
-		// $new_item->title = 'Member Gallery';
-		// $new_item->menu_order = count( $items );
-		// $items[count( $items ) -1]->menu_order = count( $items )+1;
-
-		// $tmp_item = $items[count( $items ) -1];
-		// $items[count( $items ) -1] = $new_item;
-		// $items[] = $tmp_item;
-        // echo "<pre>";
-        // print_r($items);
-        // echo "</pre>"; 
-	}
-	return $items;
-}
-add_filter( 'wp_get_nav_menu_items', 'my_wp_get_nav_menu_items', 99, 3 );
-
-
-function rt_change_profile_tab_order() {
-// global $bp;
-
-// $user_id = get_current_user_id();
-// $url = trailingslashit ( get_rtmedia_user_link ( get_current_user_id () ) ) . RTMEDIA_MEDIA_SLUG ."/";
-
-// $rtmedia_item = clone $bp->bp_nav['activity'];
-// $rtmedia_item->backcompat_nav['name'] = "Member Gallery";
-// $rtmedia_item->backcompat_nav['slug'] = "member_gallery";
-// $rtmedia_item->backcompat_nav['url'] = $url;
-// $rtmedia_item->backcompat_nav['position'] = 70;
-// $rtmedia_item->backcompat_nav['css_id'] = "member_gallery";
-// $rtmedia_item->backcompat_nav['screen_function'] = "bp_member_gallery";
-// $rtmedia_item->backcompat_nav['default_subnav_slug'] = "member_gallery_sub";
-
-// $bp->bp_nav['profile']['position'] = 10;
-// $bp->bp_nav['activity']['position'] = 20;
-// $bp->bp_nav['friends']['position'] = 30;
-// $bp->bp_nav['groups']['position'] = 40;
-// $bp->bp_nav['messages']['position'] = 50;
-// $bp->bp_nav['settings']['position'] = 60;
-// $bp->bp_nav['member_gallery'] = $rtmedia_item;
-// echo "<pre>";
-// print_r($bp);
-// die();
-}
 
 function rt_media_gallery_nav_setup() {
     global $bp;
@@ -103,7 +45,7 @@ function rt_media_gallery_nav_setup() {
         
         bp_core_new_nav_item( 
             array( 'name' => __( 'Member Gallery' ), 
-                   'slug' => 'member_gallery', 
+                   'slug' => RTMEDIA_MEDIA_SLUG, 
                    'url'  => $url,
                    'parent_url' => $bp->loggedin_user->domain . $bp->slug . '/', 
                    'parent_slug' => $bp->slug, 
@@ -114,9 +56,9 @@ function rt_media_gallery_nav_setup() {
 
 function rt_media_gallery_function_to_show_screen() {
     //add title and content here – last is to call the members plugin.php template
-    add_action( 'bp_template_title', 'rt_media_gallery_function_to_show_screen_title' );
-    add_action( 'bp_template_content', 'rt_media_gallery_function_to_show_screen_content' );
-    bp_core_load_template( apply_filters( 'bp_core_template_plugin', 'members/single/plugins' ) );
+    // add_action( 'bp_template_title', 'rt_media_gallery_function_to_show_screen_title' );
+    // add_action( 'bp_template_content', 'rt_media_gallery_function_to_show_screen_content' );
+    //bp_core_load_template( apply_filters( 'bp_core_template_plugin', 'members/single/plugins' ) );
 }
 
 function rt_media_gallery_function_to_show_screen_title() {
@@ -342,4 +284,10 @@ function rtmedia_before_media_gallery_handler()
 }
 add_action("rtmedia_before_media_gallery","rtmedia_before_media_gallery_handler");
 
+function remove_admin_bar() {
+    if (!current_user_can('administrator') && !is_admin()) {
+      show_admin_bar(false);
+    }
+}
+add_action('after_setup_theme', 'remove_admin_bar');
 ?>
