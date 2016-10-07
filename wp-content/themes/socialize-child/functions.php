@@ -290,4 +290,43 @@ function remove_admin_bar() {
     }
 }
 add_action('after_setup_theme', 'remove_admin_bar');
+
+function wp_reviewer_with_vc() {
+   vc_map( array(
+      "name" => __( "WP Reviewer", "my-text-domain" ),
+      "base" => "rwp-review",
+      "class" => "rwp-reviewer",
+      "category" => __( "Content", "my-text-domain"),
+      "params" => array(
+        array(
+            "type" => "textfield",
+            "holder" => "div",
+            "class" => "rmy-text-domain-id",
+            "heading" => __( "Template Id", "my-text-domain" ),
+            "param_name" => "template",
+            "value" => __( "", "my-text-domain" ),
+            "description" => __( "Id of Template", "my-text-domain" )
+         ),
+         array(
+            "type" => "textfield",
+            "holder" => "div",
+            "class" => "rmy-text-domain-template-id",
+            "heading" => __( "Id", "my-text-domain" ),
+            "param_name" => "id",
+            "value" => __( "", "my-text-domain" ),
+            "description" => __( "Id of Reviewer.", "my-text-domain" )
+         ),
+         array(
+            "type" => "textfield",
+            "holder" => "div",
+            "class" => "rmy-text-domain-template-theme",
+            "heading" => __( "Id", "my-text-domain" ),
+            "param_name" => "template_theme",
+            "value" => __( "", "my-text-domain" ),
+            "description" => __( "Template theme of Reviewer.", "my-text-domain" )
+         )         
+      )
+   ) );
+}
+add_action( 'vc_before_init', 'wp_reviewer_with_vc' );
 ?>

@@ -65,3 +65,37 @@ Template: socialize
 .gb-home-right-sidebar{
     margin-right: -5px;
 }
+.rwp-review select,.rwp-people-label {
+    color: #003366 !important;
+}
+
+.rwp-review .rwp-criterion-bar-base,.rwp-header {
+    display: none;
+}
+
+.rwp-review .rwp-criterion-text {
+    border-bottom: 3px solid #003366;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0 !important;
+    color: #003366;
+    font-family: Roboto,Arial,Helvetica,sans-serif !important;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500 !important;
+    line-height: 18px;
+    opacity: 1;
+    transition: opacity 0.24s ease-in-out 0s;
+    visibility: visible;
+    clear: both;
+    margin: 0 0 15px;
+    overflow: hidden;
+    padding-bottom: 11px;
+    position: relative;
+    text-transform: uppercase;
+    width: 100%;    
+}
+.rwp-review .rwp-criterion-label,.rwp-people-label,.rwp-users-reviews-toolbar{
+    font-weight: 500 !important;
+}
+.gb-home-right-side-bar .rwp-review-wrap,.rwp-scores{
+    margin-top: 0px !important;
+}
